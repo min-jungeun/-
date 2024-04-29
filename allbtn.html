@@ -13,26 +13,36 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: transparent;
+            background-color: yellow;
+            padding: 0;
+            display: flex;
+            align-items: center;
         }
         #animationAllbtn:before{
+            top: 0;
+        }
+        #animationAllbtn:before,
+        #animationAllbtn:after
+        {
             content: ""; /*중요한 컨텐츠를 넣는게 아님*/
             display: block;
             height: 3px;
             background-color: black;
+            position:absolute;
+            left: 0;
+            width: 100%;
+
+        }
+        #animationAllbtn:after{
+            bottom: 0;
         }
         #animationAllbtn span{
             display: block;
             height: 3px;
             background-color: black;
-            margin: 8px 0;
+            width: 100%;
         }
-        #animationAllbtn:after{
-            content: "";
-            display: block;
-            height: 3px;
-            background-color: black;
-        }
+        
 
     </style>
 </head>
